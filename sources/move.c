@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   move.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: almeddah <almeddah@student.42lehavre.fr    +#+  +:+       +#+        */
+/*   By: alae <alae@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 18:15:42 by almeddah          #+#    #+#             */
-/*   Updated: 2025/03/25 13:50:03 by almeddah         ###   ########.fr       */
+/*   Updated: 2026/10/24 15:50:15 by alae             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,13 +128,13 @@ int	key_handler(int keycode, t_data *data)
 {
 	if (keycode == 65307)
 		data->quit = 1;
-	else if (keycode == 119)
+	else if (keycode == 119 || keycode == 65362)
 		moove_up(data);
-	else if (keycode == 97)
+	else if (keycode == 97 || keycode == 65361)
 		moove_left(data);
-	else if (keycode == 115)
+	else if (keycode == 115 || keycode == 65364)
 		moove_down(data);
-	else if (keycode == 100)
+	else if (keycode == 100 || keycode == 65363)
 		moove_right(data);
 	return (0);
 }
