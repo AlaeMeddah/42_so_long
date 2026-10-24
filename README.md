@@ -38,10 +38,19 @@ Create a small 2D game in C using **MiniLibX**. The project teaches handling tex
 
 ## 🛠️ Compilation and Usage
 ```
+sudo apt update
+sudo apt install libx11-dev libxext-dev libxrender-dev libxrandr-dev
+sudo apt install libbsd-dev
 make
-./so_long map.ber
+./so_long carte/carte.ber
 ```
 - Bonus ideas:
   - Enemy patrols.
   - Sprite animation.
   - On-screen movement count.
+
+## 🛠️ Bonus Compilation and Usage
+```
+make bonus
+./so_long_bonus carte/bonus.ber
+```
